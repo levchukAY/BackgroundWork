@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.artiomlevchuk.backgroundwork">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.StartedService" />
+        <service android:name=".service.MultiThreadService" />
+        <service android:name=".service.MyIntentService" />
+        <service android:name=".service.BindBoundService" />
+        <service android:name=".service.MessengerBoundService" />
+
+        <activity android:name=".activity.BinderBoundServiceActivity" />
+        <activity android:name=".activity.IntentServiceActivity" />
+        <activity android:name=".activity.StartedServiceActivity" />
+        <activity android:name=".activity.MessengerBoundServiceActivity" />
+
+    </application>
+
+</manifest>
